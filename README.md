@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://1LE00.github.io/easybank
 
 ## My process
 
