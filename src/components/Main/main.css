@@ -1,0 +1,34 @@
+.main > section:not(.hero) {
+  padding-inline: 1.5rem;
+  padding-block: 6rem;
+}
+
+@media screen and (min-width: 582px) {
+  .main > section:not(.hero) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main > section:not(.hero) {
+    padding-inline: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main > section:not(.hero) {
+    padding-inline: 10.5rem;
+  }
+}

@@ -1,0 +1,8 @@
+.App {
+  max-width: 1536px;
+  margin-inline: auto;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: var(--fs-default);
+  font-family: var(--ff-default);
+}

@@ -1,0 +1,36 @@
+.reason{
+    background-color: hsl(var(--clr-neutral-grayish-blue), 0.15);
+    gap: 3.5rem;
+}
+
+.reason__content{
+    gap: 1.5rem;
+}
+
+.reason__content h2{
+    font-size: 1.9rem;
+}
+
+.reason__cards{
+    gap: 2.5rem;
+}
+
+@media screen and (min-width: 582px){
+    .reason__cards.flex-column{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 3rem;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .reason, .reason__content{
+        align-items: flex-start;
+    }
+
+    .reason__content{
+        max-width: 660px;
+    }
+}

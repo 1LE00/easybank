@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Theme 1 */
+  --clr-primary-dark-blue: 233, 26%, 24%;
+  --clr-primary-lime-green: 136, 65%, 51%;
+  --clr-primary-cyan: 192, 70%, 51%;
+  --clr-neutral-grayish-blue: 233, 8%, 62%;
+  --clr-neutral-light-grayish-blue: 220, 16%, 96%;
+  --clr-neutral-very-light-gray: 0, 0%, 98%;
+  --clr-neutral-white: 0, 0%, 100%;
+
+  /* font-sizes */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 2.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
+  --fs-300: 0.9375rem;
+  --fs-200: 0.85rem;
+  --fs-100: 0.8rem;
+  --fs-default: 1.125rem;
+
+  /* font-families */
+  --ff-default: 'Public Sans', sans-serif;
+}
+
+/* Custom properties */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Add default color, background, font-size, font-family */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4{
+  color: hsl(var(--clr-primary-dark-blue));
+  font-weight: 400;
+}
+
+p{
+  color: hsl(var(--clr-neutral-grayish-blue));
+  font-size: var(--fs-300);
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  -webkit-user-drag: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  appearance: none;
+  border: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom properties */
+
+/* Reused styles start*/
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.none {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.smooth {
+  scroll-behavior: smooth;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--clr-dark));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--clr-primary));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--clr-primary) / 0.8);
+}
+
+::selection {
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-primary) / 0.5);
+}
+
+@media screen and (min-width:1440px){
+  p{
+    font-size: 1.125rem;
+  }
+}

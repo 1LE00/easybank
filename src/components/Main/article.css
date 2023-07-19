@@ -1,0 +1,33 @@
+.article {
+  gap: 2rem;
+  background-color: hsl(var(--clr-neutral-very-light-gray), 0.5);
+}
+
+.article h2 {
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 582px) {
+  .article {
+    gap: 3rem;
+  }
+
+  .article__cards.flex-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 4rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .article{
+        align-items: flex-start;
+    }
+
+    .article__cards.flex-column {
+        row-gap: 0;
+      }
+}
